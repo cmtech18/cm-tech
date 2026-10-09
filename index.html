@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CM TECH | Gestão Inteligente</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">CM</div>
+
+            <div>
+                <h2>CM TECH</h2>
+                <span>Soluções digitais</span>
+            </div>
+        </div>
+
+        <nav>
+
+            <button class="menu active" onclick="mostrarPagina('dashboard', this)">
+                <span>⌂</span>
+                Dashboard
+            </button>
+
+            <button class="menu" onclick="mostrarPagina('clientes', this)">
+                <span>♙</span>
+                Clientes
+            </button>
+
+            <button class="menu" onclick="mostrarPagina('produtos', this)">
+                <span>▣</span>
+                Produtos
+            </button>
+
+            <button class="menu" onclick="mostrarPagina('financeiro', this)">
+                <span>R$</span>
+                Financeiro
+            </button>
+
+            <button class="menu" onclick="mostrarPagina('documentos', this)">
+                <span>▤</span>
+                Documentos
+            </button>
+
+            <button class="menu" onclick="mostrarPagina('assistente', this)">
+                <span>✦</span>
+                Assistente CM
+            </button>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="status">
+                <div class="status-dot"></div>
+
+                <div>
+                    <strong>Sistema ativo</strong>
+                    <small>CM TECH</small>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <span class="welcome">Painel de controle</span>
+                <h1 id="tituloPagina">Dashboard</h1>
+            </div>
+
+            <div class="profile">
+
+                <div class="notification">
+                    🔔
+                </div>
+
+                <div class="avatar">
+                    C
+                </div>
+
+                <div class="profile-info">
+                    <strong>Administrador</strong>
+                    <span>CM TECH</span>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- DASHBOARD -->
+
+        <section id="dashboard" class="pagina ativa">
+
+            <div class="hero">
+
+                <div>
+                    <span class="tag">CM TECH • DEMONSTRAÇÃO</span>
+
+                    <h2>
+                        Gestão mais simples.<br>
+                        <strong>Tecnologia mais inteligente.</strong>
+                    </h2>
+
+                    <p>
+                        Centralize informações, acompanhe seus resultados
+                        e utilize tecnologia para facilitar a rotina da empresa.
+                    </p>
+                </div>
+
+                <div class="hero-icon">
+                    ✦
+                </div>
+
+            </div>
+
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <div class="card-top">
+                        <span>Clientes</span>
+                        <div class="card-icon blue">♙</div>
+                    </div>
+
+                    <h3>128</h3>
+
+                    <small class="positive">
+                        ↑ 12% este mês
+                    </small>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-top">
+                        <span>Faturamento</span>
+                        <div class="card-icon green">R$</div>
+                    </div>
+
+                    <h3>R$ 8.450</h3>
+
+                    <small class="positive">
+                        ↑ 8,4% este mês
+                    </small>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-top">
+                        <span>Pedidos</span>
+                        <div class="card-icon purple">▣</div>
+                    </div>
+
+                    <h3>37</h3>
+
+                    <small class="positive">
+                        ↑ 5 novos hoje
+                    </small>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-top">
+                        <span>Estoque</span>
+                        <div class="card-icon orange">📦</div>
+                    </div>
+
+                    <h3>214</h3>
+
+                    <small>
+                        produtos cadastrados
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-grid">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <h3>Resumo financeiro</h3>
+                            <span>Outubro 2026</span>
+                        </div>
+
+                        <button class="small-button">
+                            Ver detalhes
+                        </button>
+                    </div>
+
+                    <div class="chart">
+
+                        <div class="bar-container">
+                            <div class="bar" style="height:45%"></div>
+                            <span>Seg</span>
+                        </div>
+
+                        <div class="bar-container">
+                            <div class="bar" style="height:70%"></div>
+                            <span>Ter</span>
+                        </div>
+
+                        <div class="bar-container">
+                            <div class="bar" style="height:55%"></div>
+                            <span>Qua</span>
+                        </div>
+
+                        <div class="bar-container">
+                            <div class="bar" style="height:85%"></div>
+                            <span>Qui</span>
+                        </div>
+
+                        <div class="bar-container">
+                            <div class="bar" style="height:65%"></div>
+                            <span>Sex</span>
+                        </div>
+
+                        <div class="bar-container">
+                            <div class="bar" style="height:92%"></div>
+                            <span>Sáb</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <h3>Assistente CM</h3>
+                            <span>Inteligência para sua rotina</span>
+                        </div>
+
+                        <span class="ai-status">● IA</span>
+                    </div>
+
+                    <div class="assistant-preview">
+
+                        <div class="ai-message">
+                            Olá! Sou o Assistente CM.
+                            Posso ajudar a analisar os dados da empresa.
+                        </div>
+
+                        <button onclick="mostrarPagina('assistente')">
+                            Conversar com o Assistente →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="panel recent">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h3>Atividades recentes</h3>
+                        <span>Últimas movimentações</span>
+                    </div>
+
+                </div>
+
+                <div class="activity">
+
+                    <div class="activity-icon">
+                        +
+                    </div>
+
+                    <div>
+                        <strong>Novo cliente cadastrado</strong>
+                        <span>João da Silva foi adicionado</span>
+                    </div>
+
+                    <small>Hoje, 09:32</small>
+
+                </div>
+
+
+                <div class="activity">
+
+                    <div class="activity-icon">
+                        R$
+                    </div>
+
+                    <div>
+                        <strong>Venda registrada</strong>
+                        <span>Venda de R$ 350,00</span>
+                    </div>
+
+                    <small>Hoje, 08:45</small>
+
+                </div>
+
+
+                <div class="activity">
+
+                    <div class="activity-icon">
+                        📦
+                    </div>
+
+                    <div>
+                        <strong>Estoque atualizado</strong>
+                        <span>Produto "Plano Premium"</span>
+                    </div>
+
+                    <small>Ontem</small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CLIENTES -->
+
+        <section id="clientes" class="pagina">
+
+            <div class="section-header">
+
+                <div>
+                    <span class="tag">GESTÃO</span>
+                    <h2>Clientes</h2>
+                    <p>Centralize e acompanhe seus clientes.</p>
+                </div>
+
+                <button class="primary-button" onclick="abrirModal('Novo cliente')">
+                    + Novo cliente
+                </button>
+
+            </div>
+
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="pesquisaCliente"
+                    placeholder="Pesquisar cliente..."
+                    onkeyup="pesquisarClientes()"
+                >
+
+            </div>
+
+
+            <div class="table-panel">
+
+                <table id="tabelaClientes">
+
+                    <thead>
+
+                        <tr>
+                            <th>Cliente</th>
+                            <th>Telefone</th>
+                            <th>Serviço</th>
+                            <th>Status</th>
+                            <th>Último atendimento</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <strong>João da Silva</strong>
+                            </td>
+                            <td>(85) 99999-1111</td>
+                            <td>Consultoria</td>
+                            <td><span class="badge green">Ativo</span></td>
+                            <td>08/10/2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>Maria Oliveira</strong>
+                            </td>
+                            <td>(85) 99888-2222</td>
+                            <td>Plano Premium</td>
+                            <td><span class="badge green">Ativo</span></td>
+                            <td>07/10/2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>Pedro Santos</strong>
+                            </td>
+                            <td>(85) 99777-3333</td>
+                            <td>Manutenção</td>
+                            <td><span class="badge yellow">Pendente</span></td>
+                            <td>04/10/2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>Ana Costa</strong>
+                            </td>
+                            <td>(85) 99666-4444</td>
+                            <td>Consultoria</td>
+                            <td><span class="badge green">Ativo</span></td>
+                            <td>02/10/2026</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PRODUTOS -->
+
+        <section id="produtos" class="pagina">
+
+            <div class="section-header">
+
+                <div>
+                    <span class="tag">CONTROLE</span>
+                    <h2>Produtos</h2>
+                    <p>Acompanhe seus produtos e estoque.</p>
+                </div>
+
+                <button class="primary-button" onclick="abrirModal('Novo produto')">
+                    + Novo produto
+                </button>
+
+            </div>
+
+
+            <div class="product-grid">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        💻
+                    </div>
+
+                    <div class="product-info">
+                        <span>TECNOLOGIA</span>
+                        <h3>Plano Premium</h3>
+                        <p>Serviço empresarial completo</p>
+
+                        <div class="product-bottom">
+                            <strong>R$ 299,90</strong>
+                            <small>32 disponíveis</small>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        ⚙️
+                    </div>
+
+                    <div class="product-info">
+                        <span>SERVIÇO</span>
+                        <h3>Automação Básica</h3>
+                        <p>Automação de processos</p>
+
+                        <div class="product-bottom">
+                            <strong>R$ 499,90</strong>
+                            <small>18 disponíveis</small>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        🤖
+                    </div>
+
+                    <div class="product-info">
+                        <span>INTELIGÊNCIA ARTIFICIAL</span>
+                        <h3>Assistente IA</h3>
+                        <p>Assistente personalizado</p>
+
+                        <div class="product-bottom">
+                            <strong>R$ 699,90</strong>
+                            <small>12 disponíveis</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FINANCEIRO -->
+
+        <section id="financeiro" class="pagina">
+
+            <div class="section-header">
+
+                <div>
+                    <span class="tag">FINANCEIRO</span>
+                    <h2>Financeiro</h2>
+                    <p>Acompanhe as movimentações da empresa.</p>
+                </div>
+
+                <button class="primary-button" onclick="abrirModal('Nova movimentação')">
+                    + Nova movimentação
+                </button>
+
+            </div>
+
+
+            <div class="financial-cards">
+
+                <div class="financial-card">
+                    <span>Entradas</span>
+                    <strong>R$ 8.450,00</strong>
+                    <small>↑ 8,4%</small>
+                </div>
+
+                <div class="financial-card">
+                    <span>Despesas</span>
+                    <strong>R$ 3.120,00</strong>
+                    <small>↓ 3,2%</small>
+                </div>
+
+                <div class="financial-card">
+                    <span>Saldo</span>
+                    <strong>R$ 5.330,00</strong>
+                    <small>Resultado atual</small>
+                </div>
+
+            </div>
+
+
+            <div class="table-panel">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Descrição</th>
+                            <th>Categoria</th>
+                            <th>Data</th>
+                            <th>Valor</th>
+                            <th>Tipo</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Venda de serviço</td>
+                            <td>Serviços</td>
+                            <td>09/10/2026</td>
+                            <td>R$ 500,00</td>
+                            <td><span class="badge green">Entrada</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Internet</td>
+                            <td>Operacional</td>
+                            <td>08/10/2026</td>
+                            <td>R$ 120,00</td>
+                            <td><span class="badge red">Saída</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Venda de produto</td>
+                            <td>Produtos</td>
+                            <td>08/10/2026</td>
+                            <td>R$ 350,00</td>
+                            <td><span class="badge green">Entrada</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- DOCUMENTOS -->
+
+        <section id="documentos" class="pagina">
+
+            <div class="section-header">
+
+                <div>
+                    <span class="tag">ORGANIZAÇÃO</span>
+                    <h2>Documentos</h2>
+                    <p>Centralize documentos importantes da empresa.</p>
+                </div>
+
+                <button class="primary-button" onclick="abrirModal('Enviar documento')">
+                    + Enviar documento
+                </button>
+
+            </div>
+
+
+            <div class="documents-grid">
+
+                <div class="document-card">
+                    <div class="document-icon">📄</div>
+                    <div>
+                        <strong>Contrato Social</strong>
+                        <span>PDF • 2,4 MB</span>
+                    </div>
+                    <button>•••</button>
+                </div>
+
+                <div class="document-card">
+                    <div class="document-icon">📊</div>
+                    <div>
+                        <strong>Relatório mensal</strong>
+                        <span>PDF • 1,8 MB</span>
+                    </div>
+                    <button>•••</button>
+                </div>
+
+                <div class="document-card">
+                    <div class="document-icon">📑</div>
+                    <div>
+                        <strong>Lista de clientes</strong>
+                        <span>XLSX • 850 KB</span>
+                    </div>
+                    <button>•••</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ASSISTENTE -->
+
+        <section id="assistente" class="pagina">
+
+            <div class="assistant-page">
+
+                <div class="assistant-title">
+
+                    <div class="ai-big-icon">
+                        ✦
+                    </div>
+
+                    <div>
+                        <span class="tag">INTELIGÊNCIA ARTIFICIAL</span>
+                        <h2>Assistente CM</h2>
+
+                        <p>
+                            Um assistente inteligente para ajudar na análise
+                            das informações da empresa.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="chat-container">
+
+                    <div class="chat-header">
+
+                        <div class="chat-avatar">
+                            CM
+                        </div>
+
+                        <div>
+                            <strong>Assistente CM</strong>
+                            <span>Online</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="chat-messages" id="chatMessages">
+
+                        <div class="message ai">
+                            Olá! 👋<br><br>
+                            Sou o Assistente CM. Posso analisar informações
+                            da empresa e responder perguntas sobre os dados
+                            disponíveis nesta demonstração.
+                        </div>
+
+                    </div>
+
+
+                    <div class="suggestions">
+
+                        <button onclick="perguntaRapida('quantos clientes temos')">
+                            Quantos clientes temos?
+                        </button>
+
+                        <button onclick="perguntaRapida('qual foi o faturamento')">
+                            Qual foi o faturamento?
+                        </button>
+
+                        <button onclick="perguntaRapida('qual produto vendeu mais')">
+                            Qual produto vendeu mais?
+                        </button>
+
+                    </div>
+
+
+                    <div class="chat-input">
+
+                        <input
+                            type="text"
+                            id="chatInput"
+                            placeholder="Digite uma pergunta..."
+                            onkeydown="if(event.key === 'Enter') enviarMensagem()"
+                        >
+
+                        <button onclick="enviarMensagem()">
+                            ➤
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- MODAL -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-box">
+
+            <button class="close" onclick="fecharModal()">×</button>
+
+            <div class="modal-icon">
+                ✦
+            </div>
+
+            <h2 id="modalTitulo">Novo cadastro</h2>
+
+            <p>
+                Esta função faz parte da demonstração da CM TECH.
+            </p>
+
+            <input type="text" placeholder="Nome">
+
+            <input type="text" placeholder="Informação adicional">
+
+            <button class="primary-button" onclick="salvarDemo()">
+                Salvar demonstração
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
